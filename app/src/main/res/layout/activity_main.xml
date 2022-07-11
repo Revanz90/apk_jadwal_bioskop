@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_weight="1.6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/movie"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="silahkan login disini untuk"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="391dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="10dp"
+            android:text="lanjutkan!"
+            android:textColor="#0000CC"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/bg_gradasi"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+        android:text="Masuk"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"></RelativeLayout>
+        <EditText
+            android:id="@+id/username"
+            android:paddingLeft="10dp"
+            android:background="@drawable/form"
+            android:drawableStart="@drawable/user"
+            android:hint="  Masukan Username"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <EditText
+            android:id="@+id/password"
+            android:paddingLeft="10dp"
+            android:background="@drawable/form"
+            android:drawableStart="@drawable/key"
+            android:hint="  Masukan Password"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <TextView
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:text="Lupa Password?"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/login"
+            android:textStyle="bold"
+            android:background="@drawable/form"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="SIGN IN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <TextView
+            android:textColor="@color/white"
+            android:text="Belum punya akun?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/pindah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar sekarang"
+            android:textColor="#0000CC" />
+    </LinearLayout>
+
+</LinearLayout>
